@@ -3,7 +3,7 @@ function solveTwoPhase() {
 	if (cubeGL.isSolved() == true) typeInfo("The cube is already solved.", false);
 	else {
 		const solve_step = cubeTwoPhase.solve();
-		//console.log(solve_step)
+		console.log(solve_step)
     cubeGL.twist(solve_step);
     typeInfo("Two-phase: " + solve_step, false);
 	}
